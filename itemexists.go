@@ -7,9 +7,9 @@ import (
 
 //check if any item exists or not
 func main() {
-	var strSlice = []string{"ozombo", "twilio", "unicodedeveloper", "amycruz", "codebeast"}
-	fmt.Println(itemExists(strSlice, "ozombo"))
-	fmt.Println(itemExists(strSlice, "ichtrojan"))
+	var strSlice = []string{"banana", "apple", "peach", "managa", "dates"}
+	fmt.Println(itemExists(strSlice, "apple"))
+	fmt.Println(itemExists(strSlice, "orange"))
 }
 
 func itemExists(slice interface{}, item interface{}) bool {
@@ -21,9 +21,9 @@ func itemExists(slice interface{}, item interface{}) bool {
 
 	for i := 0; i < s.Len(); i++ {
 		if s.Index(i).Interface() == item {
-			return true //returned because ozombo is part of strSlice
+			return true //returned because apple is part of strSlice
 		}
 	}
 
-	return false //returned because ichtrojan is missing from strSlice
+	return false //returned because orange is missing from strSlice
 }

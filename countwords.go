@@ -21,7 +21,7 @@ func wordCount(str string) map[string]int {
 }
 
 func main() {
-	strLine := "ozombo unicodedeveloper node ichtrojan codebeast vscode ozombo ichtrojan twitter codebeast ozombo"
+	strLine := "I love writing code, I used to work with PHP but now I am loving GO more! Do you code in GO"
 	for index, element := range wordCount(strLine) {
 		fmt.Println(index, "=>", element)
 	}
