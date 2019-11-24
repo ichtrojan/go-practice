@@ -12,7 +12,7 @@ func wordCount(str string) map[string]int {
 	for _, word := range wordList {
 		_, ok := counts[word]
 		if ok {
-			counts[word] += 1
+			counts[word]++
 		} else {
 			counts[word] = 1
 		}
