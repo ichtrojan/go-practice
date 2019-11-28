@@ -19,7 +19,7 @@ func readCurrentDir() {
 	fmt.Printf("\nName\t\tSize\tIsDirectory  Last Modification\n")
 
 	for _, files := range fileList {
-		fmt.Printf("\n%-15s %-7v %-12v %v", files.Name(), files.Size(), files.IsDir(), files.ModTime())
+		fmt.Printf("\nName: %-15s Size: %-7v Directory?: %-12v Modified: %v\n", files.Name(), files.Size(), files.IsDir(), files.ModTime())
 	}
 }
 
