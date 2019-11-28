@@ -31,17 +31,16 @@ const (
 	PORT = ":1909"
 )
 
-// GetAppEndpoint GET A SINGLE APP USING ID
+// GetAppEndPoint A SINGLE APP USING ID
 func GetAppEndpoint(w http.ResponseWriter, req *http.Request) {
 	params := mux.Vars(req)
-	key := params["id"]
 	for _, item := range app {
 		if item.ID == params["id"] {
 			json.NewEncoder(w).Encode(item)
 			return
 		}
 	}
-	json.NewEncoder(w).Encode(key + not)
+	json.NewEncoder(w).Encode(&Application{})
 }
 
 // GetAppsEndpoint GET ALL APPS
