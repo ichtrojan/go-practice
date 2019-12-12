@@ -10,7 +10,7 @@ func main() {
 	last := intSlice[len(intSlice)-1]
 	fmt.Printf("Last element: %v\n", last)
 
-	first := intSlice[:0]
+	first := intSlice[:1]
 	fmt.Printf("First element: %d\n", first)
 
 	remove := intSlice[:len(intSlice)-1]
