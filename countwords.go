@@ -25,4 +25,5 @@ func main() {
 	for index, element := range wordCount(strLine) {
 		fmt.Println(index, "=>", element)
 	}
+	fmt.Println("There are", len(strLine), "characters in the defined string.") //count lenght of string
 }
