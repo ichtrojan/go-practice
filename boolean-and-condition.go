@@ -3,33 +3,34 @@ package main
 import "fmt"
 
 func main() {
+	subject := "Name" //Change name to your name of choice
 	single := true
 
 	if single {
-		fmt.Println("Trojan is Single")
+		fmt.Println(subject, "is Single")
 	} else {
-		fmt.Println("Trojan is not single")
+		fmt.Println(subject, "is not single")
 	}
 
 	employed := false
 
 	if employed {
-		fmt.Println("Kofo is Employed")
+		fmt.Println(subject, " is Employed")
 	} else {
-		fmt.Println("Kofo is Unemployed and Jobless at the same time")
+		fmt.Println(subject, "is Unemployed and Jobless at the same time")
 	}
 
 	// and statement
 	if employed && single {
-		fmt.Println("Subject is single and employed")
+		fmt.Println(subject, "is single and employed")
 	} else {
-		fmt.Println("Subject is single and jobless")
+		fmt.Println(subject, "is single and jobless")
 	}
 
 	// or statement
 	if employed || single {
-		fmt.Println("Subject is single or employed")
+		fmt.Println(subject, "is single or employed")
 	} else {
-		fmt.Println("Subject is not single and is jobless")
+		fmt.Println(subject, "is not single and is jobless")
 	}
 }
