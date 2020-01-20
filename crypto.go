@@ -11,7 +11,10 @@ import (
 )
 
 func main() {
-	input := "Lorem Ipsum dolor sit Amet"
+	fmt.Println("Enter a word to hash:")
+	var input string
+	fmt.Scanln(&input)
+
 	md5 := md5.New()
 	sha_256 := sha256.New()
 	sha_512 := sha512.New()
